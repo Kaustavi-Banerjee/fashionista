@@ -1,0 +1,18 @@
+<h1>
+    Listed Products
+</h1>
+<table>
+    <tr>
+        <th>User Name</th>
+        <th>User Email</th>
+        <th>Password</th>
+    </tr>
+    {{#each data}}
+
+    <tr>
+        <td>{{this.uname}}</td>
+        <td>{{this.uemail}}</td>
+        <td>{{this.pwd}}</td>
+    </tr>
+    {{/each}}
+</table>

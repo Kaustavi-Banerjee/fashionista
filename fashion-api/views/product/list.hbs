@@ -1,0 +1,25 @@
+<h1>
+    Listed Products
+</h1>
+<table>
+    <tr>
+        <th>Product Name</th>
+        <th>Product Image</th>
+        <th>Product Category</th>
+        <th>Price</th>
+        <th>Action</th>
+    </tr>
+    {{#each data}}
+
+    <tr>
+        <td>{{this.pname}}</td>
+        <td>{{this.pimage}}</td>
+        <td>{{this.pcategory}}</td>
+        <td>{{this.price}}</td>
+        <td>
+            <a href="/product/edit/:id">Edit</a>
+            <a href="/product/delete/:id">Delete</a>
+        </td>
+    </tr>
+    {{/each}}
+</table>
